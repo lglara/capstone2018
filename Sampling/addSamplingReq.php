@@ -1,5 +1,5 @@
 <?php
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling');   
    
 $sql = "INSERT INTO `samplingRequests` (`Id`, `lotId_Name`, `sampleSize`, `compId_name`, `requestDate`, `userName`, `date`, `time`) 

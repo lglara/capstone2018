@@ -1,7 +1,7 @@
 <?php
 session_start();//continues the session containing prevouse information
 
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling');  
    
 $sql = "INSERT INTO `samplingReport` (`Id`, `sampReqId`, `collSampId`, `sampSubTime`, `WONumber`, `userName`, `date`, `time`) 

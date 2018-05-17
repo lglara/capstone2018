@@ -1,7 +1,7 @@
 <?php
 session_start();//continues the session containing prevouse information
 
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling');  
    
 $sql = "INSERT INTO `collectedSamples` (`Id`, `order_Id`, `actSampleAmount`, `sampDate`, `userName`, `date`, `time`) 
@@ -17,6 +17,7 @@ $namedParameters[":time"] = $_GET['time'];
 
 $statement = $conn->prepare($sql);
 $statement->execute($namedParameters);  //ALWAYS PASS the named parameters,if any
+
 
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling');  
    
 $sql = "SELECT * FROM `customers`

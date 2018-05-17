@@ -1,7 +1,7 @@
 <?php
 session_start();//continues the session containing prevouse information
 
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling');  
    
 $sql = "UPDATE `samplingRequests` 
