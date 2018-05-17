@@ -4,7 +4,7 @@ session_start();  //creates a new session to store vaues from page to page.
 
 // print_r($_POST);//DISPLAYS POST FORM ARRAY
 
-include '../../dbConnection3.php';
+include '../dbConnection3.php';
    $conn = getDatabaseConnection('Sampling'); 
 
 $username = $_POST['username'];
