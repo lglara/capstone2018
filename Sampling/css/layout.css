@@ -1,0 +1,292 @@
+    /*BODY STRUCTURE LAYOUT*/
+        html, body{
+            width:100%;
+            margin:auto;
+            background-color: #f7bf4c;
+        }
+        #bodyWrapper{
+            width:94%;
+            /*border: 1px solid pink;*/
+            border-radius: 8px;
+            height:630px;
+            margin:auto;
+            margin-top: 2%;
+        }
+        .mainDivs{
+            height:600px;
+            float:left;
+        }
+        #nav{
+            width: 10%;
+            background-color: rgba(255, 255, 255, 0.6);
+            color:black;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            height:100%;
+        }
+        #collectiveInfo{
+            width: 35%;
+            background-color: rgba(255, 255, 255, 0.4);
+            color:black;
+            padding:15px;
+        }
+        #individualInfo{
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color:black;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding:15px;
+        }
+/*NAVIGATION CSS*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 99%;
+            background-color: #f1f1f1;
+        }
+        
+        li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            height: 30px;
+            text-align: center;
+            font-size: 13px
+        }
+        
+        li a.active {
+            background-color: #b9db01;
+            color: black;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        #homeNav{
+            height: 10%;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        #pagesNav{
+            height:80%;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        #logOutNav{
+            height: 10%;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+/* Collective BODY CSS*/
+        #collectiveInfo div{
+            margin:0;
+        }
+        .searchBox1{
+            float:left;
+        }
+        #searchInputDiv{
+            width:80%;
+            height:99%;
+        }
+        #searchBtnDiv{
+            width:18%;
+            height:99%;
+        }
+        #searchInput{
+            width:97%;
+            height:90%;
+            border:none;
+            border-radius: 8px;
+            background-color: transparent;
+            color:white;
+        }
+        #searchBtn{
+            width:99%;
+            height:90%;
+            border:none;
+            display:block;
+            background-color:none;
+            background-color: transparent;
+            color:white;
+        }
+        #search{
+            border: 1px solid gray;
+            border-radius: 8px;
+            height:5%;
+            text-align:center;
+        }
+        #records{
+            height: 80%;
+            padding:15px;
+            overflow-y: auto;
+        }
+        #footer1{
+            height:5%;
+            padding:15px;
+        }
+/*RECORD BODY CSS*/
+        #individualInfo div{
+            margin:0;
+            overflow-y: auto;
+        }
+        #dateTimeInfo{
+            height:15%;
+            padding:15px;
+        }
+       
+        #recordInfo{
+            height:65%;
+            padding:15px;
+        }
+        #footer2{
+            height:5%;
+            padding:15px;
+        }
+        .infoSection{
+            padding-bottom:35px;
+        }
+        #addRecTitle{
+            font-size:30px;
+        }
+/*Scroll Bar CSS*/
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #b9db01;
+            border-radius:4px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c7ae86; 
+        }
+/*TABLE CSS*/
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 99%;
+            color:black;
+        }
+        td, th {
+            border: 1px solid gray;
+            text-align: left;
+            padding: 8px;
+            font-size:12px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.4);
+            color:white;
+        }
+        
+        table tr:hover {
+            background-color: white;
+            color:black;
+        }
+        table td:hover {
+            cursor: pointer;
+        }
+/*Middle Body Tables CSS*/
+        .title{
+            /*border:1px solid black;*/
+            font-size:25px;
+            height:15%;
+            color:#9d1f60;
+        }
+        .table{
+            /*border:1px solid black;*/
+            height:80%;
+            overflow-y: auto;
+        }
+/*Side C USER TIME INFO CSS*/
+    .dateUserInfo{
+            float:left;
+            /*border: 1px solid black;*/
+            padding: 2px;
+            height: 85%;
+        }
+        #logo{
+            width: 30%;
+            padding:none;
+            text-align:center;
+        }
+        #logoImg{
+            height:93%;
+        }
+        #blankSpace{
+            width:38% ;
+        }
+        #dayUserInfo{
+         width:25%;   
+         text-align:right;
+         font-size: 14px;
+        }
+    /*DISPLAYING INFO IN RECORD SECTION */
+        .recInfo{
+            float:left;
+        }
+        
+        .recInfo, .recInfo2{
+            width:48%;
+            padding:5px;
+            border-bottom: 1px solid gray;
+        }
+        
+        .recInfo3{
+            float:left;
+        }
+        .recInfo3, .recInfo4{
+            width:48%;
+            padding:5px;
+            text-align: center;
+        }
+
+
+/*POP UP WINDOW CSS INFORMATION*/
+        #updateRec{
+            display:none;
+        }
+    .popUpBox {
+        display: none; /* Hidden by default */
+        z-index: 1; /* Sit on top */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(141,31,96,0.9); /* Black w/ opacity */
+    }
+    .popup-content{
+        width:90%;
+        margin:auto;
+        margin-top:50px;
+        color:white;
+    }
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+    }
+        
+    @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+
+/*FOOTER CSS*/
+    .footer{
+            font-size:10px;
+            content-align:center;
+        }
